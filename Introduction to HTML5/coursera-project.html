@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Coursera Project</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: bisque;
+        }
+        
+        .nav-bar {
+            width: 100%;
+            right: 0;
+            overflow: hidden;
+            background-color: rgb(34, 34, 34);
+        }
+        .nav-bar ul {
+            float: right;
+            display: flex;
+        }
+
+        .nav-bar ul li {
+            padding: 20px 10px;
+            list-style: none;
+        }
+
+        .nav-bar ul li a{
+            padding: 10px 20px;
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .nav-bar ul li a:hover {
+            background-color: rgb(65, 64, 64);
+            color: rgb(240, 151, 68);
+        }
+
+        #food {
+            width: 100%;            
+        }
+
+        .bold-text,
+        .achievements-text {
+            padding: 10px auto;
+            margin: 50px auto;
+            text-align: center;
+            font-size: 40px;
+            color: rgb(247, 126, 56);
+            text-shadow: 1px 1px rgb(100, 49, 2);
+            text-decoration: underline;
+        }
+
+        #foods ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        #foods ul li {
+            list-style: none;
+            display: block;
+            color: black;
+            font-size: larger;
+            padding: 10px 20px;
+        }
+
+        #foods ul li img {
+            height: 200px;
+            width: 350px;
+        }
+
+        .items-name {
+            text-align: center;
+        }
+
+        #achievements {
+            width: 100%;
+            height: 600px;
+            background-color: rgb(255, 179, 86);
+            text-align: center;
+        }
+
+        .achievements-text {
+            padding: 50px auto;
+            text-align: center;
+            /* margin: 200px auto; */
+        }
+
+        progress {
+            /* fcolor: rgb(216, 38, 38); */
+            background: rebeccapurple;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="home">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#foods">Foods</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section id="foods">
+        <h2 class="bold-text">Your Favorite Food is here</h2>
+        <ul>
+
+            <li> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVAy6GSVuUJdAL_fkmu6ra_fqcrfyA1EuI3g&usqp=CAU" alt="Thali Roti">
+                <div class="items-name"> Roti</div>
+            </li>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHBDPVswiV2diHoqiJ06ztl_jp6ZR4f-yfQ&usqp=CAU" alt="Mutton Curry">
+                <div class="items-name">Muttan Curry</div>
+            </li>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr33exGlk_n8SlkR3F6RniyaRVMlruL7ZxOg&usqp=CAU" alt="Paneer Handi">
+                <div class="items-name">Paneer Handi</div>
+            </li>
+            <li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-h2b_GQjr7N0cKzRzqMblS2k4_B42bAqPA&usqp=CAU" alt="Chole Bhature">
+                <div class="items-name">Chole Bhature</div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2 class=" achievements-text">Our Achievements</h2>
+        <p>
+            <h2 class="title-name">Delivery on time : </h2>
+            <progress value="4.5" max="5"> 4.5 / 5.0 </progress>
+        </p>
+        <p>
+            <h2 class="title-name">Food Quality : </h2>
+            <progress value="4.5" max="5"> 4.5 / 5.0 </progress>
+        </p>
+        <p>
+            <h2 class="title-name">Happy Custumer : </h2>
+            <progress value="40234" max="50000"> 40234 / 55345 </progress>
+        </p>
+    </section>
+
+    <footer id="about">
+        <h2>Our Patners</h2>
+        <img src="http://intro-webdesign.com/images/newlogo.png" alt="logo">
+        visit web : <code><a href="http://intro-webdesign.com/">http://intro-webdesign.com/</a></code>
+    </footer>
+</body>
+</html>
