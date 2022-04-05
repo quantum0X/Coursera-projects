@@ -1,0 +1,141 @@
+body {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(184, 255, 202);
+}
+
+header {
+    background-color: black;
+    background-image: url("images/flywheel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    padding: 20px;
+}
+
+header ul li {
+    list-style: none;
+    margin: 0 auto;
+}
+
+header ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: rgba(88, 88, 88, 0.4);
+}
+
+header ul li .active,
+a:hover {
+    background-color: rgba(123, 255, 156, 0.616);
+    color: black;
+}
+
+.left {
+    margin-top: 10px;
+    padding: 5px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+.left img {
+    height: 25%;
+    width: 80%;
+    margin: 10px;
+    border: 5px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+
+.right {
+    margin-top: 10px;
+    height: 100vh;
+    float: right;
+    width: 60%;
+    padding: 15px;
+    background-color: white;
+}
+
+.right h1 {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+/* -------- Table style -------- */
+
+table {
+    height: 300px;
+    width: 600px;
+    margin: auto;
+    background-color: rgb(255, 231, 200);
+}
+
+thead {
+    height: 40px;
+    background-color: rgb(255, 173, 65);
+    border: 5px solid black;
+}
+
+thead tr th {
+    padding: 0px 50px;
+    font-weight: bold;
+    background-color: rgb(255, 173, 65);
+    border: 2px solid black;
+    border-radius: 5px 5px 0px 0px;
+}
+
+thead tr th:first-child {
+    text-align: left;
+}
+
+thead tr th:nth-child(2), th:nth-child(3) {
+    text-align: center;
+}
+
+tbody tr td:first-child {
+    text-align: left;
+}
+
+tbody tr td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}
+
+tbody {
+    background-color: rgb(255, 173, 106);
+}
+
+table tr {
+    opacity: .7;
+}
+
+table tr:hover {
+    opacity: 1;
+    background-color: rgb(255, 167, 51);
+}
+
+table td {
+    color: white;
+    height: 30px;
+    margin: auto;
+    font-weight: 100;
+}
